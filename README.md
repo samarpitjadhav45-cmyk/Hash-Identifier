@@ -21,6 +21,16 @@ Open <http://localhost:3000>. For development, use `npm run dev` to restart the 
 
 The response includes `inputLength`, detected `format`, an `ambiguous` flag, an explanatory `message`, and matching algorithms with their hashcat `mode`.
 
+## Screenshots
+
+### Batch input
+
+![Batch hash input](docs/screenshots/hash-identifier-input.png)
+
+### Analysis results
+
+![Hash analysis results](docs/screenshots/hash-identifier-results.png)
+
 ## Supported patterns
 
 MD4, MD5, NTLM, SHA-1, SHA-224, SHA-256, SHA-384, SHA-512, bcrypt, Argon2, scrypt, md5crypt, sha512crypt, DEScrypt, WPA hc22000, and NetNTLMv2.
