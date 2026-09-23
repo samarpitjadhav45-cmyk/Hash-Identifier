@@ -25,11 +25,11 @@ The response includes `inputLength`, detected `format`, an `ambiguous` flag, an 
 
 ### Batch input
 
-![Batch hash input](docs/screenshots/hash-identifier-input.png)
+![Batch hash input](Hash-Identifier.png.png)
 
 ### Analysis results
 
-![Hash analysis results](docs/screenshots/hash-identifier-results.png)
+![Hash analysis results](Hash-Identifier1.png.png)
 
 ## Supported patterns
 
