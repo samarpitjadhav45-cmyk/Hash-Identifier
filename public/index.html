@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Identify likely hash algorithms from a hash string.">
+  <title>Hash Identifier</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <header class="topbar"><a class="brand" href="/"><span class="brand-mark">#</span><span>HASH <b>IDENTIFIER</b></span></a><div class="topbar-meta"><span class="status-dot"></span> LOCAL ANALYSIS <span class="slash">/</span> v1.0</div></header>
+  <main class="shell">
+    <section class="intro"><p class="eyebrow">ANALYSIS CONSOLE <span>•</span> HASH SIGNATURE RECOGNITION</p><h1>Find the right<br><em>hash family.</em></h1><p class="lede">Paste a hash to get ranked algorithm candidates, hashcat modes, and the structural clues behind each result.</p></section>
+    <section class="workspace" aria-label="Hash analysis workspace">
+      <div class="input-panel panel"><div class="panel-heading"><span>01 / INPUT</span><span class="hint">PASTE A HASH OR HASH LINE</span></div><label for="hash-input" class="sr-only">Hash to identify</label><textarea id="hash-input" spellcheck="false" placeholder="5d41402abc4b2a76b9719d911017c592"></textarea><div class="input-footer"><span id="char-count">0 characters</span><div class="input-actions"><button class="text-button" id="example-button" type="button">EXAMPLE</button><button class="text-button" id="paste-button" type="button">PASTE</button><button class="text-button" id="clear-button" type="button">CLEAR</button><button class="primary-button" id="identify-button" type="button"><span>IDENTIFY</span><span class="button-arrow">↗</span></button></div></div></div>
+      <div class="results-panel panel" aria-live="polite"><div class="panel-heading"><span>02 / RESULTS</span><span id="result-count" class="hint">WAITING FOR INPUT</span></div><div id="empty-state" class="empty-state"><div class="crosshair">+</div><p>Awaiting a signature</p><span>Results will appear here after analysis.</span></div><div id="results" class="results" hidden></div></div>
+    </section>
+    <section class="details" id="details" hidden><div><span class="detail-label">INPUT LENGTH</span><strong id="detail-length">0</strong></div><div><span class="detail-label">DETECTED FORMAT</span><strong id="detail-format">unknown</strong></div><p id="detail-message"></p></section>
+    <section class="quick-reference"><div class="reference-heading"><span>QUICK REFERENCE</span><span>COMMON HASHCAT MODES</span></div><div class="reference-grid"><div><code>0</code><span>MD5</span></div><div><code>100</code><span>SHA-1</span></div><div><code>1400</code><span>SHA-256</span></div><div><code>1700</code><span>SHA-512</span></div><div><code>3200</code><span>bcrypt</span></div><div><code>1000</code><span>NTLM</span></div></div></section>
+    <footer><span>Defensive, local, and deliberately uncertain.</span><span>VERIFY BEFORE USING A RESULT</span></footer>
+  </main><div id="toast" class="toast" role="status"></div><script src="app.js"></script>
+</body>
+</html>
